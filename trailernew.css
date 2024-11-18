@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	background: url(img/trailerbg.jpg)center/cover no-repeat;
+	position: relative;
+}
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    width: 90%; 
+    margin:80px auto;
+
+}
+
+.container h1{
+    padding: 0px 0;
+    color: #000000;
+    font-size: 44px;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+
+.row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+
+.feature-img{
+  width: 83%;
+  margin: auto;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.small-img-row{
+    display: flex;
+    background: #efefef;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 80%;
+    
+}
+
+.small-img{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.small-img img{
+    width: 185px;
+    margin-right: 10px;
+}
+
+.small-img-row p{
+    margin-left: 20px;
+    color: #707070;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.play-btn{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-610%,-50%);
+    cursor: pointer;
+}
+
+.small-img .play-btn{
+    width: 35px;
+    transform: translate(-50%,-50%);
+}
+
+.video-player{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 41%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+video:focus{
+    outline: none;
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 90%; 
+    margin: 80px auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+

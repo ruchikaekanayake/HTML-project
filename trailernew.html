@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer</title>
+    <link rel="stylesheet" href="trailernew.css">
+    
+</head>
+<body>       
+<div class="container">
+    <header>
+        <div class="logo">
+           <h2><a style="color: rgb(255, 255, 255);" href="home.html">&#8592</a></h2>
+        </div>
+        </header> 
+<h1>Fortnite Chapter 4 Season 3 WILDS Trailer</h1><br><br><br><br><br>
+
+ <div class="row">
+   <div class="col">
+    <div class="img/feature-img">
+    <img src="img/wilds.jpg" width="100%" >
+    <img src="img/play.png" class="play-btn" onclick="playVideo('vid/SnapSave.io-Fortnite Chapter 4 Season 3 WILDS Gameplay Launch Trailer-(1080p60).mp4')">
+    </div>
+   </div> 
+   <div class="col">
+    <div class="small-img-row">
+        <div class="small-img">
+             <img src="img/jujutsu.jpeg" height="100px" width="200px"> 
+             <img src="img/play.png" class="play-btn" onclick="playVideo('vid/jujutsu.mp4')"> 
+             </div>
+             <p>Fortnite x Jujutsu Kaisen Trailer</p>
+        </div>
+        <div class="small-img-row">
+            <div class="small-img">
+                 <img src="img/mega.jpg" height="100px" width="200px">
+                 <img src="img/play.png" class="play-btn" onclick="playVideo('vid/mega.mp4')"> 
+                 </div>      
+                 <p>Fortnite x Mega Trailer</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                     <img src="img/avengers.jpg" height="100px" width="200px"> 
+                     <img src="img/play.png" class="play-btn" onclick="playVideo('vid/avengers.mp4')">  
+                     </div>     
+                     <p>Fortnite x Marvel Avengers Trailer</p>
+                </div>
+   </div>
+ </div>
+</div>
+
+<div class="video-player" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+        <source src="SnapSave.io-Fortnite Chapter 4 Season 3 WILDS Gameplay Launch Trailer-(1080p60).mp4" type="video/mp4">
+    </video>
+    <img src="img/close.png" class="close-btn" onclick="stopVideo()">
+</div>
+
+
+
+<script>
+
+ var videoPlayer = document.getElementById("videoPlayer");
+ var myVideo = document.getElementById("myVideo");
+
+function stopVideo(){
+    myVideo.pause();
+    myVideo.currentTime = 0;
+    videoPlayer.style.display="none";
+
+
+}
+
+function playVideo(file){
+    myVideo.src = file;
+    videoPlayer.style.display = "block";
+}
+
+</script>
+
+
+
+</body>
+</html>

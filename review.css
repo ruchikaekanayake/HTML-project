@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.main-width{
+	width: 1100px;
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+.hero{
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	background: url('img/fortnite4.jpg')center/cover no-repeat;
+	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.hero header .logo h2 a{
+	display: block;
+	font-size: 32px;
+	font-weight: 600;
+	text-decoration: none;
+	color: white;
+}
+
+.hero header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 0 30px;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	margin-left: 60px;
+	font-size: 15px;
+	font-weight: 600;
+	border-bottom: 2px solid transparent;
+	transition: .4s;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+	border-bottom: 2px solid white;
+}
+
+nav ul li.active a{
+	border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.btn a {
+    display: inline-block;
+    background-color: #6be065c5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    text-decoration: none;    
+}
+
+nav ul li.btn:hover a{
+	border: 1px solid white;
+	color: black;
+	background: white;
+	transition: .5s;
+}
+
+:root{
+    --color-dark: #14141493;
+    --color-secodary-dark: #464C70;
+    --color-primary: #EE709D;
+    --color-text: #ffffff;
+    --color-light: #EBEBFB;
+}
+
+.board{
+    max-width: 1100px;
+    width: 60%;
+    background-color: var(--color-dark);
+    text-align: center;
+    border-radius: 15px;
+    padding: 4.5em 0;
+	opacity: 0.85;
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+.swiper {
+    width: 600px;
+    height: auto;
+  }
+
+.swiper .swiper-slide .flex{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper .swiper-slide .comments{
+    background-color: var(--color-light);
+    padding: 1.5em 2em;
+    width: 50%;
+    border-radius: 5px;
+    font-size: .9em;
+    position: relative;
+}
+
+.swiper .swiper-slide .comments::after{
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--color-light);
+    z-index: -99;
+}
+
+.swiper .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.swiper .profile img{
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+    margin: 10px 0;
+}
+
+.swiper .profile > a{
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.swiper .profile > span{
+    color: var(--color-text);
+    font-size: .8em;
+}
+
+.swiper .swiper-button-prev, .swiper-button-next{
+    color: var(--color-text);
+    display: none;
+} 
+
+@media (min-width: 320px) {
+    .board{
+        width: auto;
+    }
+
+    .swiper {
+        width: 320px;
+      }
+
+      .board > h1, p{
+          padding: 0 2em;
+      }
+}
+
+@media (min-width: 768px) {
+    .board{
+        width: 100%;
+    }
+
+    .swiper {
+        width: 600px;
+      }
+
+    .swiper .swiper-button-prev, .swiper-button-next{
+        display: initial;
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero header {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.content {
+    padding-top: 100px;
+    animation: fadeIn 1.8s ease-in-out;
+}
+
+.board {
+    padding-top: 100px;
+    animation: fadeIn 1.8s ease-in-out;
+    opacity: 1;
+}
+
